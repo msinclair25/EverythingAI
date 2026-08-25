@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"center","type":"file","file":"00 Start Here/Everything AI - Home.md","x":0,"y":0,"width":400,"height":220,"color":"5"},
+		{"id":"research","type":"file","file":"03 Career Map/Technical/Technical AI Careers.md","x":-980,"y":-620,"width":360,"height":220,"color":"6"},
+		{"id":"engineering","type":"text","text":"# Build AI systems\n[[AI Engineer]] · [[ML Engineer]] · [[LLM Engineer]] · [[Agentic AI Engineer]] · perception and robotics roles","x":-520,"y":-660,"width":410,"height":240,"color":"5"},
+		{"id":"data","type":"text","text":"# Data & knowledge\n[[Data Scientist - AI ML]] · [[ML Data Engineer]] · [[RAG and Knowledge Engineer]] · [[Taxonomist and Ontology Specialist]] · [[Knowledge Manager]]","x":-30,"y":-660,"width":420,"height":240,"color":"4"},
+		{"id":"platform","type":"text","text":"# Operate & optimize\n[[MLOps Engineer]] · [[AI Platform Engineer]] · [[Inference and Performance Engineer]] · [[AI Hardware and Accelerator Engineer]]","x":470,"y":-660,"width":420,"height":240,"color":"3"},
+		{"id":"trust","type":"text","text":"# Evaluate, secure & govern\n[[AI Evaluation Engineer]] · [[AI Security Engineer]] · [[AI Red Teamer]] · [[AI Trust and Safety Operations Specialist]] · governance, risk, compliance and assurance roles","x":900,"y":-280,"width":430,"height":280,"color":"1"},
+		{"id":"product","type":"text","text":"# Product & transformation\n[[AI Product Manager]] · [[AI Program Manager]] · [[AI Business Analyst]] · [[AI Strategy Consultant]] · [[AI Transformation Lead]] · [[Chief AI Officer and Head of AI]] · [[AI Automation Specialist]]","x":760,"y":160,"width":470,"height":290,"color":"2"},
+		{"id":"customer","type":"text","text":"# Go-to-market, customer & education\n[[AI Solutions Architect]] · [[AI Sales Engineer]] · [[AI Enterprise Account Executive]] · [[AI Product Marketing Manager]] · [[AI Strategic Partnerships Manager]] · [[AI Customer Success Manager]] · [[AI Technical Support and User Operations Specialist]] · [[AI Developer Relations and Advocate]] · [[AI Trainer and Educator]]","x":390,"y":540,"width":480,"height":340,"color":"3"},
+		{"id":"human","type":"text","text":"# UX, conversation & content\n[[AI UX and Product Designer]] · [[AI UX Researcher]] · [[Conversation Designer]] · [[AI Content Designer]] · [[Prompt and Context Engineer]]","x":-130,"y":570,"width":440,"height":250,"color":"6"},
+		{"id":"creative","type":"text","text":"# Creative media\n[[Generative AI Creative Director]] · [[AI Image and Graphic Creator]] · [[AI Video Producer]] · [[AI Audio and Music Specialist]]","x":-640,"y":530,"width":430,"height":250,"color":"6"},
+		{"id":"ops","type":"text","text":"# Human data & talent operations\n[[Data Annotator and AI Rater]] · [[Human-Feedback Specialist|Human Feedback Specialist]] · [[AI Data Operations Manager]] · [[AI Talent and Recruiting Specialist]]","x":-1060,"y":130,"width":430,"height":260,"color":"4"},
+		{"id":"guide","type":"file","file":"00 Start Here/Choose Your AI Career.md","x":-1080,"y":-240,"width":370,"height":210,"color":"5"},
+		{"id":"tools","type":"file","file":"05 Tool Atlas/AI Tool Atlas.md","x":-520,"y":-180,"width":330,"height":200,"color":"2"},
+		{"id":"foundations","type":"file","file":"01 Foundations/Foundations Hub.md","x":460,"y":-160,"width":330,"height":200,"color":"4"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"center","fromSide":"left","toNode":"guide","toSide":"right","label":"choose"},
+		{"id":"e2","fromNode":"center","fromSide":"left","toNode":"tools","toSide":"right","label":"equip"},
+		{"id":"e3","fromNode":"center","fromSide":"right","toNode":"foundations","toSide":"left","label":"learn"},
+		{"id":"e4","fromNode":"center","toNode":"research","fromSide":"top","toSide":"bottom"},
+		{"id":"e5","fromNode":"center","toNode":"engineering","fromSide":"top","toSide":"bottom"},
+		{"id":"e6","fromNode":"center","toNode":"data","fromSide":"top","toSide":"bottom"},
+		{"id":"e7","fromNode":"center","toNode":"platform","fromSide":"top","toSide":"bottom"},
+		{"id":"e8","fromNode":"center","toNode":"trust","fromSide":"right","toSide":"left"},
+		{"id":"e9","fromNode":"center","toNode":"product","fromSide":"right","toSide":"left"},
+		{"id":"e10","fromNode":"center","toNode":"customer","fromSide":"bottom","toSide":"top"},
+		{"id":"e11","fromNode":"center","toNode":"human","fromSide":"bottom","toSide":"top"},
+		{"id":"e12","fromNode":"center","toNode":"creative","fromSide":"bottom","toSide":"top"},
+		{"id":"e13","fromNode":"center","toNode":"ops","fromSide":"left","toSide":"right"}
+	]
+}

@@ -1,0 +1,29 @@
+filters:
+  and:
+    - 'file.inFolder("04 Role Tracks")'
+    - 'file.ext == "md"'
+properties:
+  file.name:
+    displayName: Role
+  family:
+    displayName: Career family
+  status:
+    displayName: Status
+  last_verified:
+    displayName: Verified
+views:
+  - type: table
+    name: All roles
+    order:
+      - file.name
+      - family
+      - status
+      - last_verified
+  - type: table
+    name: By family
+    groupBy:
+      property: family
+      direction: ASC
+    order:
+      - file.name
+      - last_verified

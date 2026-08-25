@@ -1,0 +1,15 @@
+# Obsidian machine state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# Operating-system/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local exports and temporary files
+.trash/
+*.tmp
+*.bak

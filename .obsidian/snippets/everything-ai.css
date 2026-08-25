@@ -1,0 +1,543 @@
+/* Everything AI — native Obsidian visual layer */
+body {
+  --everything-ai-blue: 58, 134, 255;
+  --everything-ai-cyan: 42, 190, 190;
+  --everything-ai-violet: 142, 92, 246;
+  --everything-ai-green: 38, 166, 91;
+  --everything-ai-orange: 232, 136, 36;
+  --everything-ai-red: 224, 82, 82;
+  --everything-ai-radius-sm: 9px;
+  --everything-ai-radius: 14px;
+  --everything-ai-radius-lg: 20px;
+  --everything-ai-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.theme-dark {
+  --everything-ai-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+}
+
+/* Reading rhythm and heading hierarchy */
+.everything-ai {
+  --h1-color: var(--text-normal);
+  --h2-color: rgb(var(--everything-ai-blue));
+  --h3-color: var(--text-normal);
+  --link-color: rgb(var(--everything-ai-violet));
+  --link-color-hover: rgb(var(--everything-ai-blue));
+  --everything-ai-content-width: 76rem;
+  line-height: 1.66;
+}
+
+.everything-ai .markdown-preview-sizer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--everything-ai-content-width);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  padding-bottom: 12vh;
+}
+
+.everything-ai .markdown-source-view.mod-cm6 .cm-sizer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--everything-ai-content-width);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+}
+
+.everything-ai .markdown-source-view.mod-cm6 .cm-content {
+  max-width: 82ch;
+}
+
+.everything-ai h1 {
+  position: relative;
+  margin-top: 0.15em;
+  margin-bottom: 0.85em;
+  padding-bottom: 0.42em;
+  border-bottom: 1px solid rgba(var(--everything-ai-blue), 0.22);
+  font-weight: 760;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.everything-ai h1::after {
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: -2px;
+  width: 4.5rem;
+  height: 4px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, rgb(var(--everything-ai-blue)), rgb(var(--everything-ai-violet)));
+  content: "";
+}
+
+.everything-ai h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.58rem;
+  margin-top: 2.15em;
+  margin-bottom: 0.75em;
+  font-size: 1.52em;
+  font-weight: 720;
+  letter-spacing: -0.02em;
+}
+
+.everything-ai h2:first-of-type {
+  margin-top: 1.55em;
+}
+
+.everything-ai h2::before {
+  flex: 0 0 auto;
+  width: 0.32rem;
+  height: 1.05em;
+  border-radius: 99px;
+  background: linear-gradient(180deg, rgb(var(--everything-ai-cyan)), rgb(var(--everything-ai-blue)));
+  content: "";
+}
+
+.everything-ai h3 {
+  margin-top: 1.7em;
+  margin-bottom: 0.55em;
+  font-size: 1.16em;
+  font-weight: 690;
+  letter-spacing: -0.01em;
+}
+
+.everything-ai p,
+.everything-ai li {
+  max-width: 82ch;
+  text-wrap: pretty;
+}
+
+.everything-ai p {
+  margin-block: 0.78em;
+}
+
+.everything-ai ul,
+.everything-ai ol {
+  margin-block: 0.7em 1.1em;
+  padding-inline-start: 1.55rem;
+}
+
+.everything-ai li::marker {
+  color: rgb(var(--everything-ai-blue));
+  font-weight: 700;
+}
+
+.everything-ai blockquote {
+  margin-block: 1.3rem;
+  padding: 0.2rem 1rem;
+  border-inline-start: 3px solid rgba(var(--everything-ai-cyan), 0.6);
+  color: var(--text-muted);
+}
+
+.everything-ai hr {
+  height: 1px;
+  margin-block: 2.25rem;
+  border: 0;
+  background: linear-gradient(90deg, transparent, rgba(var(--everything-ai-blue), 0.42), transparent);
+}
+
+/* Links, code, tags, and compact learning affordances */
+.everything-ai .internal-link {
+  border-bottom: 1px solid rgba(var(--everything-ai-violet), 0.34);
+  text-decoration: none;
+  font-weight: 560;
+  transition: border-color 120ms ease, color 120ms ease, background-color 120ms ease;
+}
+
+.everything-ai .internal-link:hover {
+  border-bottom-color: rgba(var(--everything-ai-blue), 0.9);
+  background: rgba(var(--everything-ai-blue), 0.08);
+}
+
+.everything-ai code:not(pre code) {
+  padding: 0.14em 0.4em;
+  border: 1px solid rgba(var(--everything-ai-violet), 0.22);
+  border-radius: 6px;
+  background: rgba(var(--everything-ai-violet), 0.08);
+  color: var(--text-normal);
+  font-size: 0.88em;
+}
+
+.everything-ai pre {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--everything-ai-radius);
+  box-shadow: var(--everything-ai-shadow);
+}
+
+.everything-ai .tag {
+  padding: 0.12rem 0.48rem;
+  border: 1px solid rgba(var(--everything-ai-violet), 0.25);
+  border-radius: 99px;
+  background: rgba(var(--everything-ai-violet), 0.09);
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
+/* Callouts behave like study cards */
+.everything-ai .callout {
+  margin-block: 1.25rem;
+  padding: 0.12rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--callout-color) 34%, transparent);
+  border-inline-start-width: 4px;
+  border-radius: var(--everything-ai-radius);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--callout-color) 11%, transparent),
+    color-mix(in srgb, var(--callout-color) 3.5%, transparent)
+  );
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark .everything-ai .callout {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.everything-ai .callout-title {
+  padding: 0.7rem 0.85rem 0.45rem;
+  font-weight: 720;
+  letter-spacing: -0.01em;
+}
+
+.everything-ai .callout-content {
+  padding: 0 0.85rem 0.78rem;
+}
+
+.everything-ai .callout-content > :last-child {
+  margin-bottom: 0;
+}
+
+.callout[data-callout="career"] {
+  --callout-color: rgb(var(--everything-ai-violet));
+  --callout-icon: lucide-briefcase-business;
+}
+
+.callout[data-callout="checkpoint"] {
+  --callout-color: rgb(var(--everything-ai-green));
+  --callout-icon: lucide-badge-check;
+}
+
+.callout[data-callout="source"] {
+  --callout-color: rgb(var(--everything-ai-cyan));
+  --callout-icon: lucide-library;
+}
+
+.callout[data-callout="tool"] {
+  --callout-color: rgb(var(--everything-ai-orange));
+  --callout-icon: lucide-wrench;
+}
+
+.callout[data-callout="level"] {
+  --callout-color: rgb(var(--everything-ai-blue));
+  --callout-icon: lucide-chart-no-axes-column-increasing;
+}
+
+.callout[data-callout="abstract"] {
+  --callout-color: rgb(var(--everything-ai-cyan));
+  --callout-icon: lucide-sparkles;
+}
+
+.callout[data-callout="info"] {
+  --callout-color: rgb(var(--everything-ai-blue));
+  --callout-icon: lucide-info;
+}
+
+.callout[data-callout="question"] {
+  --callout-color: rgb(var(--everything-ai-violet));
+  --callout-icon: lucide-circle-help;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="checkpoint"] {
+  --callout-color: rgb(var(--everything-ai-green));
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="failure"] {
+  --callout-color: rgb(var(--everything-ai-red));
+  --callout-icon: lucide-shield-alert;
+}
+
+.everything-ai .callout-content ul,
+.everything-ai .callout-content ol {
+  margin-block: 0.35rem 0.65rem;
+}
+
+/* Tables are scan-friendly on long role and tool notes */
+.everything-ai .el-table {
+  margin-block: 1.15rem;
+  overflow-x: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--everything-ai-radius);
+  background: var(--background-primary);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.045);
+  scrollbar-width: thin;
+}
+
+.everything-ai table {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.everything-ai th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.72rem 0.78rem;
+  border-top: 0;
+  background: linear-gradient(180deg, rgba(var(--everything-ai-blue), 0.15), rgba(var(--everything-ai-blue), 0.075));
+  color: var(--text-normal);
+  font-size: 0.82em;
+  font-weight: 720;
+  letter-spacing: 0.012em;
+}
+
+.everything-ai td {
+  padding: 0.68rem 0.78rem;
+  border-color: var(--background-modifier-border);
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.everything-ai td:first-child {
+  font-weight: 600;
+}
+
+.everything-ai tbody tr:nth-child(even) td {
+  background: rgba(var(--everything-ai-blue), 0.028);
+}
+
+.everything-ai tbody tr:hover td {
+  background: rgba(var(--everything-ai-blue), 0.075);
+}
+
+/* Mermaid diagrams keep readable native sizing with a polished frame */
+.everything-ai .mermaid {
+  margin-block: 1.35rem;
+  padding: 1.2rem;
+  overflow-x: auto;
+  border: 1px solid rgba(var(--everything-ai-blue), 0.22);
+  border-radius: var(--everything-ai-radius-lg);
+  background:
+    radial-gradient(circle at top left, rgba(var(--everything-ai-cyan), 0.10), transparent 42%),
+    radial-gradient(circle at bottom right, rgba(var(--everything-ai-violet), 0.09), transparent 40%),
+    var(--background-secondary);
+  box-shadow: var(--everything-ai-shadow);
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+.everything-ai .mermaid svg {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: auto;
+  margin-inline: auto;
+}
+
+.everything-ai .internal-embed {
+  max-width: 100%;
+  margin-block: 1.2rem;
+}
+
+/* Dynamic Bases look like embedded app panels rather than raw tables */
+.everything-ai .bases-embed {
+  display: block;
+  max-height: 34rem;
+  margin-block: 1.15rem;
+  overflow: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--everything-ai-radius);
+  background: var(--background-primary);
+  box-shadow: var(--everything-ai-shadow);
+  scrollbar-width: thin;
+}
+
+.everything-ai .bases-header {
+  position: static;
+  z-index: 4;
+  border-bottom: 1px solid var(--background-modifier-border);
+  background: color-mix(in srgb, var(--background-primary) 92%, rgb(var(--everything-ai-blue)) 8%);
+  backdrop-filter: blur(10px);
+}
+
+.everything-ai .bases-thead {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--background-secondary);
+}
+
+.everything-ai .bases-thead .bases-td {
+  color: var(--text-muted);
+  font-size: 0.82em;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.everything-ai .bases-tbody .bases-tr:hover .bases-td {
+  background: rgba(var(--everything-ai-blue), 0.075);
+}
+
+.everything-ai .bases-td[data-property="note.status"] .metadata-input-longtext {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.45rem;
+  padding: 0.05rem 0.48rem;
+  border: 1px solid rgba(var(--everything-ai-green), 0.28);
+  border-radius: 99px;
+  background: rgba(var(--everything-ai-green), 0.10);
+  color: rgb(var(--everything-ai-green));
+  font-size: 0.78em;
+  font-weight: 700;
+}
+
+/* If a learner elects to show properties, keep them compact and secondary */
+.everything-ai .metadata-container {
+  margin-bottom: 1.4rem;
+  padding: 0.75rem;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--everything-ai-radius);
+  background: var(--background-secondary);
+}
+
+.everything-ai .metadata-properties-heading {
+  color: var(--text-muted);
+  font-size: 0.82em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Home dashboard */
+.home-dashboard h1 {
+  margin-top: 0.25em;
+  font-size: clamp(2.65rem, 5vw, 4rem);
+}
+
+.home-dashboard .callout[data-callout="abstract"] {
+  padding: 0.35rem;
+  border-color: rgba(var(--everything-ai-cyan), 0.48);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(var(--everything-ai-violet), 0.16), transparent 35%),
+    linear-gradient(135deg, rgba(var(--everything-ai-cyan), 0.18), rgba(var(--everything-ai-blue), 0.07));
+}
+
+.home-dashboard .callout[data-callout="abstract"] .callout-title {
+  font-size: 1.12em;
+}
+
+.home-dashboard .callout[data-callout="warning"] {
+  box-shadow: none;
+}
+
+.home-dashboard .el-h2:has(h2[data-heading="Start in three steps"]) + .el-ol > ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  padding: 0;
+  counter-reset: home-step;
+  list-style: none;
+}
+
+.home-dashboard .el-h2:has(h2[data-heading="Start in three steps"]) + .el-ol > ol > li {
+  position: relative;
+  min-height: 6.1rem;
+  margin: 0;
+  padding: 1rem 0.9rem 1rem 3.35rem;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--everything-ai-radius);
+  background: linear-gradient(145deg, rgba(var(--everything-ai-blue), 0.08), rgba(var(--everything-ai-violet), 0.035));
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.045);
+}
+
+.home-dashboard .el-h2:has(h2[data-heading="Start in three steps"]) + .el-ol > ol > li::before {
+  position: absolute;
+  inset-block-start: 0.9rem;
+  inset-inline-start: 0.85rem;
+  display: grid;
+  width: 1.85rem;
+  height: 1.85rem;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgb(var(--everything-ai-blue)), rgb(var(--everything-ai-violet)));
+  color: white;
+  content: counter(home-step);
+  counter-increment: home-step;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+/* Canvas receives the same card language as the notes */
+.canvas-node-container {
+  border-radius: var(--everything-ai-radius);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 140ms ease, transform 140ms ease;
+}
+
+.canvas-node:hover .canvas-node-container,
+.canvas-node.is-selected .canvas-node-container {
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
+}
+
+.canvas-node-content .markdown-preview-view {
+  line-height: 1.52;
+}
+
+.canvas-node-content h1 {
+  letter-spacing: -0.025em;
+}
+
+@media (max-width: 800px) {
+  .everything-ai .markdown-preview-sizer {
+    padding-inline: 1rem;
+  }
+
+  .everything-ai h1,
+  .home-dashboard h1 {
+    font-size: 2.35rem;
+  }
+
+  .everything-ai h2 {
+    font-size: 1.32em;
+  }
+
+  .everything-ai .callout-title {
+    padding-inline: 0.68rem;
+  }
+
+  .everything-ai .callout-content {
+    padding-inline: 0.68rem;
+  }
+
+  .home-dashboard .el-h2:has(h2[data-heading="Start in three steps"]) + .el-ol > ol {
+    grid-template-columns: 1fr;
+  }
+
+  .home-dashboard .el-h2:has(h2[data-heading="Start in three steps"]) + .el-ol > ol > li {
+    min-height: 0;
+  }
+
+  .everything-ai .bases-embed {
+    max-height: 28rem;
+  }
+
+  .everything-ai .el-table {
+    margin-inline: -0.25rem;
+  }
+
+  .everything-ai table {
+    min-width: 38rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .everything-ai .internal-link,
+  .canvas-node-container {
+    transition: none;
+  }
+}

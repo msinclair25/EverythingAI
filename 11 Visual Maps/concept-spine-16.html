@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EverythingAI · Frozen concept spine</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'JetBrains Mono', monospace; background: #020617; min-height: 100vh; padding: 2rem; color: white; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header-row { display: flex; align-items: center; gap: 1rem; }
+    .pulse-dot { width: 12px; height: 12px; background: #a78bfa; border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.45} }
+    h1 { font-size: 1.45rem; font-weight: 700; }
+    .subtitle { color: #94a3b8; font-size: 0.85rem; margin: .4rem 0 1.4rem 1.75rem; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; }
+    .cell { background: rgba(15,23,42,.6); border: 1px solid #1e293b; border-radius: .7rem; padding: .85rem .8rem 1rem; min-height: 118px; }
+    .n { font-size: .7rem; font-weight: 700; letter-spacing: .08em; margin-bottom: .35rem; }
+    .cell h2 { font-size: .82rem; font-weight: 600; margin-bottom: .35rem; }
+    .cell p { font-size: .68rem; color: #94a3b8; line-height: 1.35; }
+    .c1 .n { color: #22d3ee; } .c2 .n { color: #34d399; } .c3 .n { color: #a78bfa; } .c4 .n { color: #fbbf24; }
+    .c1 { border-color: rgba(34,211,238,.35); } .c2 { border-color: rgba(52,211,153,.35); }
+    .c3 { border-color: rgba(167,139,250,.35); } .c4 { border-color: rgba(251,191,36,.35); }
+    .legend { margin-top: 1.25rem; color: #64748b; font-size: .72rem; }
+    .footer { text-align: center; margin-top: 1.2rem; color: #475569; font-size: .72rem; }
+    @media (max-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-row"><div class="pulse-dot"></div><h1>Frozen concept spine · 16</h1></div>
+    <p class="subtitle">Each tile is one question. No 17th tile unless a role + case both need a word these cannot unpack.</p>
+    <div class="grid">
+      <div class="cell c1"><div class="n">01</div><h2>Tokens &amp; cost</h2><p>What is the model counting, and why is that money?</p></div>
+      <div class="cell c1"><div class="n">02</div><h2>Leakage</h2><p>Why can a beautiful score be fake?</p></div>
+      <div class="cell c1"><div class="n">03</div><h2>Metrics</h2><p>Which number should change ship / stop?</p></div>
+      <div class="cell c1"><div class="n">04</div><h2>KV &amp; inference</h2><p>Why is generation slow at 40 users?</p></div>
+      <div class="cell c2"><div class="n">05</div><h2>Context</h2><p>What goes in the window, in what order?</p></div>
+      <div class="cell c2"><div class="n">06</div><h2>Contracts</h2><p>Why is model JSON untrusted?</p></div>
+      <div class="cell c2"><div class="n">07</div><h2>Retrieval</h2><p>Found, packed, cited — which failed?</p></div>
+      <div class="cell c2"><div class="n">08</div><h2>Adaptation</h2><p>Prompt, retrieve, or change weights?</p></div>
+      <div class="cell c3"><div class="n">09</div><h2>Embeddings</h2><p>Close ≠ true. Cosine is not a date.</p></div>
+      <div class="cell c3"><div class="n">10</div><h2>Training loop</h2><p>Loss fell. Should you ship epoch 12?</p></div>
+      <div class="cell c3"><div class="n">11</div><h2>Agent loop</h2><p>When is the next step chosen at run time?</p></div>
+      <div class="cell c3"><div class="n">12</div><h2>Injection</h2><p>Why is a system prompt not a lock?</p></div>
+      <div class="cell c4"><div class="n">13</div><h2>Decoding</h2><p>Temperature does not add facts.</p></div>
+      <div class="cell c4"><div class="n">14</div><h2>Calibration</h2><p>When it says 80%, does it happen 80%?</p></div>
+      <div class="cell c4"><div class="n">15</div><h2>Quantization</h2><p>Which quality did we trade for bits?</p></div>
+      <div class="cell c4"><div class="n">16</div><h2>Vision</h2><p>Why isn’t a VLM caption a detector?</p></div>
+    </div>
+    <p class="legend">Color = syllabus week 1–4. Exception rule lives in Concept Spine Freeze.md.</p>
+    <p class="footer">EverythingAI · teaching graphic · 2026-08-12</p>
+  </div>
+</body>
+</html>
