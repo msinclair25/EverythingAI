@@ -24,6 +24,8 @@ body {
   --link-color: rgb(var(--everything-ai-violet));
   --link-color-hover: rgb(var(--everything-ai-blue));
   --everything-ai-content-width: 76rem;
+  --everything-ai-diagram-max-width: 70rem;
+  --everything-ai-diagram-max-height: min(72vh, 48rem);
   line-height: 1.66;
 }
 
@@ -315,11 +317,39 @@ body {
   background: rgba(var(--everything-ai-blue), 0.075);
 }
 
-/* Mermaid diagrams keep readable native sizing with a polished frame */
+/* Diagrams and visual assets fit the reading viewport before requiring a scroll */
+.everything-ai img:not(.emoji) {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  margin-inline: auto;
+}
+
+.everything-ai p:has(> img:not(.emoji)) {
+  margin-block: 0.85rem 1.35rem;
+}
+
+.everything-ai p > img:not(.emoji),
+.everything-ai .internal-embed.media-embed img:not(.emoji) {
+  max-block-size: var(--everything-ai-diagram-max-height);
+  object-fit: contain;
+  border: 1px solid rgba(var(--everything-ai-blue), 0.18);
+  border-radius: var(--everything-ai-radius-lg);
+  box-shadow: var(--everything-ai-shadow);
+}
+
+/* Mermaid diagrams use the available width and a viewport-safe height. */
 .everything-ai .mermaid {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  inline-size: 100%;
+  max-inline-size: 100%;
+  max-block-size: var(--everything-ai-diagram-max-height);
   margin-block: 1.35rem;
-  padding: 1.2rem;
-  overflow-x: auto;
+  padding: clamp(0.65rem, 1.25vw, 1rem);
+  overflow: auto;
   border: 1px solid rgba(var(--everything-ai-blue), 0.22);
   border-radius: var(--everything-ai-radius-lg);
   background:
@@ -332,16 +362,32 @@ body {
 }
 
 .everything-ai .mermaid svg {
+  flex: 0 1 auto;
   display: block;
-  width: auto;
-  max-width: none;
-  height: auto;
+  inline-size: min(100%, var(--everything-ai-diagram-max-width));
+  max-inline-size: 100%;
+  block-size: auto;
+  max-block-size: var(--everything-ai-diagram-max-height);
   margin-inline: auto;
 }
 
 .everything-ai .internal-embed {
   max-width: 100%;
   margin-block: 1.2rem;
+}
+
+/* The three infographic notes get a little more canvas while staying screen-safe. */
+.everything-ai.diagram-focus {
+  --everything-ai-content-width: 90rem;
+  --everything-ai-diagram-max-height: min(78vh, 54rem);
+}
+
+.everything-ai.diagram-focus .markdown-preview-sizer {
+  padding-inline: clamp(0.75rem, 2.4vw, 2rem);
+}
+
+.everything-ai.diagram-focus p > img:not(.emoji) {
+  inline-size: min(100%, var(--everything-ai-diagram-max-width));
 }
 
 /* Dynamic Bases look like embedded app panels rather than raw tables */

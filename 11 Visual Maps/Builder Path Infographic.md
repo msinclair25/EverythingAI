@@ -7,7 +7,9 @@ as_of: 2026-08-12
 last_verified: 2026-08-13
 review_by: 2026-11-12
 tags: [ai-careers, visual-map, infographic]
-cssclasses: [everything-ai]
+cssclasses:
+  - everything-ai
+  - diagram-focus
 ---
 
 # Builder path infographic

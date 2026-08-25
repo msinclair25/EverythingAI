@@ -14,6 +14,9 @@ cssclasses: [everything-ai]
 
 Pictures for the technical path. They are teaching graphics, not evidence.
 
+> [!tip] Easier diagram reading
+> Mermaid diagrams now fit the available note width and cap their height to the reading viewport. Dense diagrams keep an internal scroll only when necessary. Open the three infographic notes directly for a wider, screen-safe focus layout.
+
 ## Infographics (HTML)
 
 - [[Builder Path Infographic]] — four-week sequence

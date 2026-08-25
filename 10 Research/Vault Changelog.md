@@ -3,14 +3,20 @@ title: Vault Changelog
 type: changelog
 scope: United States
 status: active
-as_of: 2026-08-24
-last_verified: 2026-08-24
-review_by: 2026-11-24
+as_of: 2026-08-25
+last_verified: 2026-08-25
+review_by: 2026-11-25
 tags: [ai-careers, changelog]
 cssclasses: [everything-ai]
 ---
 
 # Vault Changelog
+
+## 2026-08-25 — Diagram fit-to-viewport pass
+
+- Updated `everything-ai.css` behavior for Mermaid blocks so diagrams use the available reading width, cap their height to the viewport, and keep overflow only for genuinely dense diagrams.
+- Added responsive image framing for visual assets and a `diagram-focus` layout to the three infographic notes so they are legible without oversized horizontal spill.
+- Regenerated the Notion import packs after the visual changes; the Obsidian vault remains canonical.
 
 ## 2026-08-25 — Notion bridge and import packs
 
