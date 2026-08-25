@@ -2,6 +2,8 @@
 
 Everything AI is a United States-focused, evidence-aware study vault for learning, practicing, and interviewing for AI work. It is designed for Obsidian and includes a parallel Notion import layer.
 
+![Everything AI learning and career atlas](assets/everything-ai-readme-hero.png)
+
 The material is organized around a simple loop:
 
 > Learn the field → choose the role → build evidence → prepare for the interview.
@@ -42,6 +44,10 @@ ruby scripts/export_notion.rb
 ```
 
 Obsidian Markdown is the canonical source; the Notion layer is a one-way derivative. See [Notion Import Guide](Notion%20Import%20Guide.md) for conversion rules and known differences.
+
+## Repository visuals
+
+The matching [GitHub social preview image](assets/everything-ai-github-social-preview.jpg) is included for repository sharing. Upload it from **Settings → General → Social preview** on GitHub when you want it to appear on shared repository links.
 
 ## Evidence and freshness
 

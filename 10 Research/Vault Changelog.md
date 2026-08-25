@@ -12,6 +12,12 @@ cssclasses: [everything-ai]
 
 # Vault Changelog
 
+## 2026-08-25 — Public repository artwork
+
+- Added `assets/everything-ai-readme-hero.png` as the README hero image.
+- Added `assets/everything-ai-github-social-preview.jpg` at 1280×640 and under 1 MB for GitHub's social-preview uploader.
+- Kept repository-only artwork out of the Notion export; the vault's three teaching infographics remain the imported visual assets.
+
 ## 2026-08-25 — Diagram fit-to-viewport pass
 
 - Updated `everything-ai.css` behavior for Mermaid blocks so diagrams use the available reading width, cap their height to the viewport, and keep overflow only for genuinely dense diagrams.

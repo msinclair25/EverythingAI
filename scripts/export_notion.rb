@@ -33,10 +33,10 @@ end
 
 def asset_files
   Dir.glob(ROOT.join("**/*").to_s).map { |path| Pathname.new(path) }.select do |path|
+    rel = path.relative_path_from(ROOT).to_s
     path.file? &&
       ASSET_EXTENSIONS.include?(path.extname.downcase) &&
-      !path.to_s.start_with?(ROOT.join(".obsidian").to_s) &&
-      !path.to_s.start_with?(ROOT.join("Notion Import Pack").to_s)
+      !rel.start_with?(".obsidian/", ".git/", "Notion Import Pack/", "assets/")
   end.sort_by { |path| path.relative_path_from(ROOT).to_s }
 end
 
