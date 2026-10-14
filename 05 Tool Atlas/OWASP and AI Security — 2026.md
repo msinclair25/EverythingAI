@@ -23,9 +23,13 @@ tags:
 cssclasses:
   - everything-ai
 source_policy: official-first
+last_updated: 2026-10-13
 ---
 
 # OWASP and AI Security — 2026
+
+> [!info] October 13, 2026 update
+> The LLM taxonomy IDs, names, and flashcards were corrected to the canonical **2025** edition; Agentic 2026 remains separate. Read [[Case - Agent Memory Incident]] for durable-state recovery. Other dossier sections retain their August verification scope.
 
 > [!abstract] The point of this dossier
 > OWASP is not a certification, a scanner, or a substitute for a system threat model. It is an open, practitioner-led vocabulary for turning AI failure modes into attack scenarios, controls, tests, evidence, owners, and residual risk. This dossier explains how to use the current OWASP GenAI Security Project work across LLM applications, agentic systems, data, MCP, supply chain, red teaming, governance, and incident response.
@@ -36,7 +40,7 @@ This is a U.S.-focused study note with official OWASP sources checked on **Augus
 
 | OWASP layer | What it covers | When to use it |
 |---|---|---|
-| **LLM Top 10 2026** | The model as a component inside an application | Chat, RAG, generation, classification, embeddings, model APIs, and downstream sinks |
+| **LLM Top 10 2025** | The model as a component inside an application | Chat, RAG, generation, classification, embeddings, model APIs, and downstream sinks |
 | **Agentic Top 10 2026** | The model as an actor that plans, calls tools, holds memory, delegates, and causes effects | Autonomous or semi-autonomous agents, workflows, MCP/A2A, multi-agent systems |
 | **GenAI Data Security 2026** | Training, fine-tuning, prompts, retrieval, embeddings, memory, outputs, and data governance | Any system crossing data trust domains |
 | **Secure MCP guidance** | Authentication, authorization, sessions, tool schemas, deployment, and chained tool risk | MCP servers, clients, registries, and third-party connectors |
@@ -66,46 +70,46 @@ flowchart LR
 
 The core principle is architectural: do not try to build a model that can never be fooled. Build the surrounding system so that a fooled model cannot reach secrets, high-impact actions, or unbounded resources without deterministic controls.
 
-## OWASP LLM Top 10 for 2026
+## OWASP LLM Top 10 for 2025
 
-The current OWASP page identifies the 2026 guide as the latest community-driven LLM application guide. The release expands cross-modal, supply-chain, fine-tuning, memory, and generated-code coverage, and maps risks to NIST, MITRE ATLAS, CWE, and the Agentic Top 10.
+Correction checked October 13, 2026: the [canonical OWASP index](https://genai.owasp.org/llm-top-10/) identifies the LLM list as the 2025 edition. The IDs below follow that edition; Agentic 2026 is a separate list. The evidence recommendations are this vault’s study synthesis, not extra official category names.
 
 | ID | Risk | What fails | Minimum evidence |
 |---|---|---|---|
-| LLM01:2026 | Prompt Injection | Untrusted input changes model behavior or downstream interpretation | Direct, indirect, multimodal, memory, and adaptive attack matrix |
-| LLM02:2026 | Sensitive Information Disclosure | The system reveals data, context, secrets, or private application information | Cross-tenant, secret-canary, log, retrieval, and output tests |
-| LLM03:2026 | Excessive Agency | The application grants too much functionality, permission, or autonomy | Tool/action matrix, policy tests, approval and replay evidence |
-| LLM04:2026 | Supply Chain | A model, data, package, tool, plugin, or dependency is untrusted or compromised | Hashes, signatures, AIBOM, provenance, dependency and license review |
-| LLM05:2026 | Data and Model Poisoning | Training, tuning, feedback, retrieval, or model artifacts are manipulated | Dataset lineage, poisoning tests, quarantine, split and rollback evidence |
-| LLM06:2026 | Unbounded Consumption | Requests consume unbounded tokens, compute, calls, storage, or money | Rate, budget, timeout, concurrency, loop, and denial-of-wallet tests |
-| LLM07:2026 | Misinformation | Fluent output is false, unsupported, misleading, or acted on as fact | Groundedness, citation, abstention, calibration, and expert evidence |
-| LLM08:2026 | Hidden Context Exposure | System prompts, hidden context, private instructions, or internal reasoning leak | Canary, context separation, output, logging, and side-channel tests |
-| LLM09:2026 | Vector and Embedding Weaknesses | Retrieval indexes enable poisoning, leakage, access bypass, or semantic attacks | ACL, deletion, poisoning, cross-tenant, inversion, and quality tests |
-| LLM10:2026 | Improper Output Handling | Model output reaches code, markup, queries, tools, or sinks unsafely | Typed validation, sink fuzzing, encoding, sandbox, and negative tests |
+| LLM01:2025 | Prompt Injection | Untrusted input changes model behavior or downstream interpretation | Direct, indirect, multimodal, memory, and adaptive attack matrix |
+| LLM02:2025 | Sensitive Information Disclosure | The system reveals data, context, secrets, or private application information | Cross-tenant, secret-canary, log, retrieval, and output tests |
+| LLM03:2025 | Supply Chain | A model, data, package, tool, plugin, or dependency is untrusted or compromised | Hashes, signatures, AIBOM, provenance, dependency and license review |
+| LLM04:2025 | Data and Model Poisoning | Training, tuning, feedback, retrieval, or model artifacts are manipulated | Dataset lineage, poisoning tests, quarantine, split and rollback evidence |
+| LLM05:2025 | Improper Output Handling | Model output reaches code, markup, queries, tools, or sinks unsafely | Typed validation, sink fuzzing, encoding, sandbox, and negative tests |
+| LLM06:2025 | Excessive Agency | The application grants too much functionality, permission, or autonomy | Tool/action matrix, policy tests, approval and replay evidence |
+| LLM07:2025 | System Prompt Leakage | System prompts, hidden context, private instructions, or internal reasoning leak | Canary, context separation, output, logging, and side-channel tests |
+| LLM08:2025 | Vector and Embedding Weaknesses | Retrieval indexes enable poisoning, leakage, access bypass, or semantic attacks | ACL, deletion, poisoning, cross-tenant, inversion, and quality tests |
+| LLM09:2025 | Misinformation | Fluent output is false, unsupported, misleading, or acted on as fact | Groundedness, citation, abstention, calibration, and expert evidence |
+| LLM10:2025 | Unbounded Consumption | Requests consume unbounded tokens, compute, calls, storage, or money | Rate, budget, timeout, concurrency, loop, and denial-of-wallet tests |
 
-### LLM01–LLM05: input, information, agency, supply chain, and integrity
+### Input, information, agency, supply chain, and integrity
 
 **LLM01 — Prompt Injection.** Injection can arrive through a user, webpage, email, PDF, image, audio, video, issue title, database row, MCP result, tool output, persistent memory, or RAG passage. Separate data and instruction channels; keep credentials and state changes in application code; use least privilege; validate output in trusted code; filter every modality; strip invisible characters; treat memory writes as privileged; pin tools; and test adaptive attackers. A prompt filter alone is not a security boundary.
 
 **LLM02 — Sensitive Information Disclosure.** Disclosure includes user data, secrets, credentials, private documents, system prompts, hidden context, logs, tool outputs, embeddings, model artifacts, and metadata. Use minimization, tenant-bound identity, ACLs before retrieval, redaction, secret scanning, short retention, safe errors, and output/egress policy. Test synthetic canaries across users, tools, traces, logs, retries, and renders.
 
-**LLM03 — Excessive Agency.** The application exposes too many functions, too much permission, or too much autonomy. Separate read/propose/write; use deterministic policy, schemas, allowlists, approval, idempotency, transaction limits, dry-run previews, and raw action views. An action matrix should list actor, tenant, tool, verb, fields, amount, approval, reversibility, and audit record.
+**LLM06 — Excessive Agency.** The application exposes too many functions, too much permission, or too much autonomy. Separate read/propose/write; use deterministic policy, schemas, allowlists, approval, idempotency, transaction limits, dry-run previews, and raw action views. An action matrix should list actor, tenant, tool, verb, fields, amount, approval, reversibility, and audit record.
 
-**LLM04 — Supply Chain.** The chain includes base/adapted models, tokenizers, data, embeddings, indexes, prompts, plugins, MCP servers, packages, containers, runtimes, and evaluators. Pin versions and hashes, verify signatures, generate an AIBOM, record licenses/provenance, scan dependencies, isolate third-party code, and gate model/data/index/policy changes.
+**LLM03 — Supply Chain.** The chain includes base/adapted models, tokenizers, data, embeddings, indexes, prompts, plugins, MCP servers, packages, containers, runtimes, and evaluators. Pin versions and hashes, verify signatures, generate an AIBOM, record licenses/provenance, scan dependencies, isolate third-party code, and gate model/data/index/policy changes.
 
-**LLM05 — Data and Model Poisoning.** Poisoning can target pretraining, fine-tuning, preferences, evaluation sets, RAG corpora, embeddings, memory, feedback, or artifacts. Use source allowlists, lineage, curation, anomalous-example checks, quarantine, independent holdouts, contamination checks, signed snapshots, and rollback. Measure attack success and false-positive cost.
+**LLM04 — Data and Model Poisoning.** Poisoning can target pretraining, fine-tuning, preferences, evaluation sets, RAG corpora, embeddings, memory, feedback, or artifacts. Use source allowlists, lineage, curation, anomalous-example checks, quarantine, independent holdouts, contamination checks, signed snapshots, and rollback. Measure attack success and false-positive cost.
 
-### LLM06–LLM10: resources, truth, context, retrieval, and sinks
+### Resources, truth, context, retrieval, and sinks
 
-**LLM06 — Unbounded Consumption.** Budget tokens, context, calls, tools, storage, GPU time, queues, retries, and provider credits. Use per-user/tenant budgets, max steps, timeouts, concurrency caps, circuit breakers, caching where safe, spend alerts, routing, and a kill switch. Load-test bursts, loops, retries, and provider degradation.
+**LLM10 — Unbounded Consumption.** Budget tokens, context, calls, tools, storage, GPU time, queues, retries, and provider credits. Use per-user/tenant budgets, max steps, timeouts, concurrency caps, circuit breakers, caching where safe, spend alerts, routing, and a kill switch. Load-test bursts, loops, retries, and provider degradation.
 
-**LLM07 — Misinformation.** A confident falsehood becomes a security risk when it changes a decision or drives a tool. Use authoritative retrieval, source/effective-date metadata, citation entailment, abstention, calibration, expert review, and uncertainty UX. Measure correctness, citation precision, abstention, and harm severity by slice.
+**LLM09 — Misinformation.** A confident falsehood becomes a security risk when it changes a decision or drives a tool. Use authoritative retrieval, source/effective-date metadata, citation entailment, abstention, calibration, expert review, and uncertainty UX. Measure correctness, citation precision, abstention, and harm severity by slice.
 
-**LLM08 — Hidden Context Exposure.** This broadens “system prompt leakage” to private developer instructions, memory, tool metadata, routing, internal context, logs, and reasoning-like content. Minimize context; separate tenants/channels; keep secrets out of prompts; redact traces; protect logs; and test rendered output, URLs, Unicode, errors, and side channels.
+**LLM07 — System Prompt Leakage.** This category concerns disclosure of system prompts or instructions; related private-context exposures should also be analyzed under sensitive-information disclosure. The category name does not imply that hidden reasoning is a reliable or appropriate audit artifact. Minimize context; separate tenants/channels; keep secrets out of prompts; redact traces; protect logs; and test rendered output, URLs, Unicode, errors, and side channels.
 
-**LLM09 — Vector and Embedding Weaknesses.** Embeddings can be poisoned, queried for membership, used to bypass ACLs, or made to leak another tenant. Authorize before retrieval and again before generation; use namespaces, filters, encryption, deletion/re-index evidence, source provenance, query limits, index versioning, and adversarial retrieval tests.
+**LLM08 — Vector and Embedding Weaknesses.** Embeddings can be poisoned, queried for membership, used to bypass ACLs, or made to leak another tenant. Authorize before retrieval and again before generation; use namespaces, filters, encryption, deletion/re-index evidence, source provenance, query limits, index versioning, and adversarial retrieval tests.
 
-**LLM10 — Improper Output Handling.** Model output is untrusted input. The sink may be SQL, shell, HTML, Markdown, browser code, email, a path, URL, interpreter, workflow parameter, or another model. Use typed schemas, semantic validation, parameterized APIs, encoding, allowlists, SSRF/path controls, safe renderers, sandboxes, and human review. Fuzz each sink.
+**LLM05 — Improper Output Handling.** Model output is untrusted input. The sink may be SQL, shell, HTML, Markdown, browser code, email, a path, URL, interpreter, workflow parameter, or another model. Use typed schemas, semantic validation, parameterized APIs, encoding, allowlists, SSRF/path controls, safe renderers, sandboxes, and human review. Fuzz each sink.
 
 ## OWASP Top 10 for Agentic Applications 2026
 
@@ -267,16 +271,16 @@ Use only authorized, isolated targets. A scanner finding is a hypothesis until a
 
 What is the OWASP LLM Top 10 boundary?::Risks when a model is a component inside an application.
 What is the OWASP Agentic Top 10 boundary?::Risks when a system plans, acts, retains memory, delegates, communicates, or causes effects.
-What is LLM01:2026?::Prompt Injection.
-What is LLM02:2026?::Sensitive Information Disclosure.
-What is LLM03:2026?::Excessive Agency.
-What is LLM04:2026?::Supply Chain.
-What is LLM05:2026?::Data and Model Poisoning.
-What is LLM06:2026?::Unbounded Consumption.
-What is LLM07:2026?::Misinformation.
-What is LLM08:2026?::Hidden Context Exposure.
-What is LLM09:2026?::Vector and Embedding Weaknesses.
-What is LLM10:2026?::Improper Output Handling.
+What is LLM01:2025?::Prompt Injection.
+What is LLM02:2025?::Sensitive Information Disclosure.
+What is LLM03:2025?::Supply Chain.
+What is LLM04:2025?::Data and Model Poisoning.
+What is LLM05:2025?::Improper Output Handling.
+What is LLM06:2025?::Excessive Agency.
+What is LLM07:2025?::System Prompt Leakage.
+What is LLM08:2025?::Vector and Embedding Weaknesses.
+What is LLM09:2025?::Misinformation.
+What is LLM10:2025?::Unbounded Consumption.
 What is ASI01:2026?::Agent Goal Hijack.
 What is ASI02:2026?::Tool Misuse and Exploitation.
 What is ASI03:2026?::Identity and Privilege Abuse.
@@ -315,7 +319,7 @@ What is an agent action matrix?::A table mapping actors and tools to verbs, fiel
 ## Official sources checked 2026-08-24
 
 - [OWASP GenAI Security Project](https://genai.owasp.org/)
-- [OWASP GenAI LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)
+- [OWASP GenAI LLM Top 10 2025](https://genai.owasp.org/llm-top-10/)
 - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
 - [OWASP Agentic Security Initiative](https://genai.owasp.org/initiatives/agentic-security-initiative/)
 - [OWASP GenAI Data Security Risks & Mitigations 2026](https://genai.owasp.org/resource/owasp-genai-data-security-risks-mitigations-2026/)

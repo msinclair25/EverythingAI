@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/applied-scientist
   - skill/applied-research
+last_updated: 2026-10-13
 ---
 
 # Applied Scientist
+
+> [!info] October 13, 2026 update
+> Practice focus: **Which hypothesis explains the measured gain**. Produce **Controlled ablation and error analysis** and answer: What alternative explanation remains?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Use scientific modeling and experimentation to improve a consequential real-world outcome, balancing novelty with product constraints, data reality, and measurable impact.

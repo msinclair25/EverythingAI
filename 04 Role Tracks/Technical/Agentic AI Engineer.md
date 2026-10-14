@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/agentic-ai-engineer
   - skill/agents
+last_updated: 2026-10-13
 ---
 
 # Agentic AI Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **What the agent may remember and execute**. Produce **State machine, action policy, replay tests** and answer: What survives a crash or malicious memory write?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Build AI systems that can plan, use tools, manage state, and complete multi-step work while remaining observable, permission-bounded, recoverable, and measurably useful.

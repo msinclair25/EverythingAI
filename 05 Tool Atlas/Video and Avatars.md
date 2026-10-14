@@ -17,9 +17,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Video and Avatars
+
+> [!info] October 13, 2026 update
+> API availability and consumer-app availability are different. See [[Model and Agent Lifecycle Management]] for lifecycle changes; current consumer Sora access was not verified in this pass.
 
 Video tools span generative shots, editing, effects, translation/dubbing, presenters, avatars, and programmatic rendering. Choose by deliverable and revision workflow rather than demo quality.
 
@@ -34,7 +38,7 @@ Video tools span generative shots, editing, effects, translation/dubbing, presen
 | Synthesia | Free entry plus paid self-serve/enterprise | Corporate training and multilingual avatar video | Minute/feature limits and custom-avatar governance | [pricing](https://www.synthesia.io/pricing) · [help](https://help.synthesia.io/) |
 | Pika | Free limited plan plus paid plans | Short creative generation and effects | Credits, watermark/resolution, consistency | [pricing](https://pika.art/pricing) |
 | Luma Dream Machine | Free limited access plus paid plans/API | Generative video ideation and shots | Credit/priority queue and output consistency | [plans](https://lumalabs.ai/dream-machine/pricing) · [API](https://lumalabs.ai/api/pricing) |
-| OpenAI Sora | Access and usage tied to current eligible plans/credits; paid posture | Storyboarded generative video and remix workflows | Availability, limits, safeguards, plan entitlements | [Sora](https://openai.com/sora/) · [help](https://help.openai.com/en/collections/9952893-sora) |
+| OpenAI Sora / Videos API | Historical API entry; do not assume current access | See [[Model and Agent Lifecycle Management]] for API retirement | Consumer product access not verified in this refresh | [API lifecycle](https://developers.openai.com/api/docs/deprecations) |
 
 > [!danger] Obtain explicit identity consent
 > Do not create deceptive impersonations. Document consent for faces and voices, intended uses, duration, revocation, languages, and distribution. Label synthetic media where required or appropriate and protect avatar credentials/assets.
@@ -61,7 +65,7 @@ flowchart TD
     A["Video deliverable"] --> B{"Avatar presenter?"}
     B -->|"Yes"| C["HeyGen or Synthesia"]
     B -->|"No"| D{"Generate shots/effects?"}
-    D -->|"Yes"| E["Runway, Firefly, Pika, Luma, or Sora"]
+    D -->|"Yes"| E["Verify a currently available video tool"]
     D -->|"No"| F["DaVinci Resolve editing"]
     C --> G["Consent and identity review"]
     E --> H["Continuity and rights review"]

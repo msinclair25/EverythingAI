@@ -14,9 +14,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Tool Source Registry
+
+> [!info] October 13, 2026 update
+> [[October 2026 Research Refresh]] is the claim-level source ledger for current lifecycle, cloud, MCP, and security changes.
 
 Every source below is first-party: an official product/pricing page, official documentation/help center, official project repository, U.S. government publication, or standards-body page. **Most links and pricing postures were last checked August 12, 2026; the Microsoft Azure DevOps and Foundry and Cloudflare/Vercel AI sections were checked August 24, 2026.** Live pages may not expose a publication date; this is the access/verification date.
 
@@ -171,7 +175,7 @@ Verified: **2026-08-12**
 Verified: **2026-08-24**
 
 - MITRE ATLAS — [knowledge base](https://atlas.mitre.org/).
-- OWASP — [GenAI Security Project](https://genai.owasp.org/), [LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/), [Agentic Top 10 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/).
+- OWASP — [GenAI Security Project](https://genai.owasp.org/), [LLM Top 10 2025](https://genai.owasp.org/llm-top-10/), [Agentic Top 10 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/).
 - OWASP — [GenAI Data Security 2026](https://genai.owasp.org/resource/owasp-genai-data-security-risks-mitigations-2026/), [secure MCP guide](https://genai.owasp.org/resource/a-practical-guide-for-secure-mcp-server-development/), [AIBOM initiative](https://genai.owasp.org/owasp-aibom/), [AIBOM Generator](https://genai.owasp.org/resource/owasp-aibom-generator/), [Threat Defense COMPASS](https://genai.owasp.org/resource/owasp-genai-security-project-threat-defense-compass-1-0/), and [AI Security Solutions Landscape](https://genai.owasp.org/initiatives/ai-security-solutions/).
 - OWASP — [AI Security Governance and Adoption](https://genai.owasp.org/initiatives/ai-security-governance-and-adoption/), [Agentic Security Initiative](https://genai.owasp.org/initiatives/agentic-security-initiative/), and [FinBot training environment](https://genai.owasp.org/).
 - NIST — [AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [Adversarial Machine Learning taxonomy (NIST AI 100-2e2025)](https://csrc.nist.gov/pubs/ai/100/2/e2025/final).

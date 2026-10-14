@@ -4,6 +4,7 @@ type: changelog
 scope: United States
 status: active
 as_of: 2026-08-25
+last_updated: 2026-10-13
 last_verified: 2026-08-25
 review_by: 2026-11-25
 tags: [ai-careers, changelog]
@@ -11,6 +12,17 @@ cssclasses: [everything-ai]
 ---
 
 # Vault Changelog
+
+## 2026-10-13 — Research refresh and applied technical depth
+
+- Added [[October 2026 Research Refresh]] with checked primary sources, cutoff handling, corrections, and explicit review limits.
+- Added nine notes spanning model/service lifecycle, cloud identity/operations, MCP contract testing, two worked cases, all-technical-role practice, U.S. career/governance context, and a change-impact template.
+- Added differentiated exercises to all 23 technical profiles and current career/governance entry points to all 40 nontechnical profiles; older verification dates remain intact.
+- Corrected the OWASP LLM taxonomy to the canonical 2025 edition, including risk IDs and flashcards; Agentic 2026 remains a separate framework.
+- Updated the Home and GitHub README, kept repository artwork, and corrected stale BLS and video API pointers.
+- Added a read-only structural validator for frontmatter, code fences, note/local-file links, and reproducible inventory counts. This does not verify external URLs, claims, or visual rendering.
+- Fixed the Notion export's hardcoded date and removed the promise that separate imports automatically repair cross-part links. Rebuilt the full and split packs.
+- Inventory: 235 vault notes, 63 roles, 12 studio cases, 1,052 flashcard lines, 145 notes with explicit checks, and 148 Mermaid diagrams. See the validator for counting definitions.
 
 ## 2026-08-25 — Public repository artwork
 

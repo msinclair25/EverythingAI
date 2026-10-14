@@ -17,9 +17,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Image and Design
+
+> [!info] October 13, 2026 update
+> Model and product names do not guarantee endpoint availability. Use [[Model and Agent Lifecycle Management]] and current provider lifecycle tables before planning a paid workflow.
 
 Image tools cover ideation, generation, editing, layout, compositing, typography, brand systems, and production export. Judge the whole workflow: controllability and editability often matter more than the first generated image.
 

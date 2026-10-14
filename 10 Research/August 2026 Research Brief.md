@@ -8,9 +8,13 @@ last_verified: 2026-08-12
 review_by: 2026-11-12
 tags: [ai-careers, research, labor-market, policy]
 cssclasses: [everything-ai]
+last_updated: 2026-10-13
 ---
 
 # August 2026 Research Brief
+
+> [!info] October 13, 2026 update
+> Historical snapshot: use [[US Career and Governance Update — October 2026]] for the newer BLS projection window and [[October 2026 Research Refresh]] for current technical changes.
 
 ## What the evidence supports
 

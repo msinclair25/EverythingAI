@@ -9,9 +9,13 @@ last_verified: 2026-08-12
 review_by: 2026-09-12
 tags: [ai-careers, research, policy, law]
 cssclasses: [everything-ai]
+last_updated: 2026-10-13
 ---
 
 # U.S. Policy Source Register
+
+> [!info] October 13, 2026 update
+> See [[US Career and Governance Update — October 2026]] for a limited NIST/California refresh. This older federal register is overdue for a full legal review; its entire table was not reverified.
 
 Use this as an update checklist, not a substitute for primary text or counsel.
 

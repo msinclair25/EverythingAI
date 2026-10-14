@@ -18,9 +18,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # AI Tool Atlas
+
+> [!info] October 13, 2026 update
+> Start with [[October 2026 Research Refresh]], then [[Model and Agent Lifecycle Management]] and [[Cloud AI Operations — October 2026]]. Older price/access labels retain their original verification dates.
 
 Use this atlas to choose a tool class, shortlist products, and run a small proof of concept before committing money or sensitive data. It is a curated map of representative tools available to U.S. users—not an endorsement or an exhaustive directory.
 

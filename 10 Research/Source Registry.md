@@ -8,9 +8,13 @@ last_verified: 2026-08-24
 review_by: 2026-11-24
 tags: [ai-careers, research, sources]
 cssclasses: [everything-ai]
+last_updated: 2026-10-13
 ---
 
 # Source Registry
+
+> [!info] October 13, 2026 update
+> [[October 2026 Research Refresh]] records the new primary-source checks and corrections. Other entries below retain their earlier verification scope.
 
 All links below were checked August 12, 2026 unless a section or linked note states a more specific date.
 
@@ -32,7 +36,7 @@ All links below were checked August 12, 2026 unless a section or linked note sta
 
 ## U.S. labor and occupation data
 
-- [BLS occupational projections, 2024–2034](https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm).
+- [BLS occupational projections (current window; see October update)](https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm).
 - [BLS Data Scientists](https://www.bls.gov/ooh/math/data-scientists.htm).
 - [BLS Computer and Information Research Scientists](https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm).
 - [BLS Software Developers, QA Analysts, and Testers](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm).
@@ -76,7 +80,7 @@ All links below were checked August 12, 2026 unless a section or linked note sta
 ## OWASP and AI security — checked 2026-08-24
 
 - [OWASP GenAI Security Project](https://genai.owasp.org/).
-- [OWASP GenAI LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) — current LLM application risks, mappings, and 2026 release resource.
+- [OWASP GenAI LLM Top 10 2025](https://genai.owasp.org/llm-top-10/) — canonical LLM application taxonomy; edition and IDs corrected 2026-10-13.
 - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) — goal hijack, tool misuse, identity/privilege, supply chain, code execution, memory, inter-agent communication, cascading failure, human trust, and rogue agents.
 - [OWASP GenAI Data Security Risks & Mitigations 2026](https://genai.owasp.org/resource/owasp-genai-data-security-risks-mitigations-2026/).
 - [OWASP practical guide for secure MCP server development](https://genai.owasp.org/resource/a-practical-guide-for-secure-mcp-server-development/).

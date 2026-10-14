@@ -12,9 +12,13 @@ last_verified: 2026-08-12
 review_by: 2026-11-12
 tags: [ai-careers, assessment, hub]
 cssclasses: [everything-ai]
+last_updated: 2026-10-13
 ---
 
 # Assessment Center
+
+> [!info] October 13, 2026 update
+> New knowledge checks and answer keys live in [[October 2026 Research Refresh]] and its seven study layers. Use [[Technical Role Practice Workbook — October 2026]] for a role-specific evidence rubric.
 
 Assessments are for routing and retrieval practice, not credentials.
 

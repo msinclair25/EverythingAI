@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/research-scientist
   - skill/research
+last_updated: 2026-10-13
 ---
 
 # AI/ML Research Scientist
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether a claimed contribution survives fair comparison**. Produce **Reproducible experiment and compute-normalized baseline** and answer: Are tuning budgets and selection procedures comparable?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Produce new, defensible knowledge about learning systems: formulate a consequential question, design controlled experiments, analyze uncertainty and failure, and communicate results so others can reproduce or build on them.

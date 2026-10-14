@@ -17,9 +17,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Foundation Model and API Providers
+
+> [!info] October 13, 2026 update
+> Read [[Model and Agent Lifecycle Management]] before selecting an endpoint. Older model examples are not a current availability guarantee.
 
 These services provide hosted text, reasoning, multimodal, embedding, image, speech, and agent-capable models. Availability is model-, region-, account-, and safety-tier-dependent.
 

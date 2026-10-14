@@ -20,9 +20,13 @@ as_of: 2026-08-12
 status: current
 last_verified: 2026-08-12
 review_by: 2026-11-12
+last_updated: 2026-10-13
 ---
 
 # Chief AI Officer and Head of AI
+
+> [!info] October 13, 2026 update
+> Use [[US Career and Governance Update — October 2026]] for current U.S. evidence and a role-family work-product exercise. Pair it with [[Model and Agent Lifecycle Management]] to explain how a technical change affects users, risk, cost, and communication. Older profile claims retain their original verification dates.
 
 > [!abstract] Mission
 > Establish enterprise direction, authority, capability, investment discipline, and accountability so AI advances the organization’s mission with measurable value, controlled risk, and sustainable operating ownership.

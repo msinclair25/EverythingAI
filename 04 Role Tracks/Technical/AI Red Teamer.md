@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/ai-red-teamer
   - skill/adversarial-testing
+last_updated: 2026-10-13
 ---
 
 # AI Red Teamer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether a realistic attack crosses a defined boundary**. Produce **Authorized synthetic scenario, control evidence, remediation retest** and answer: Was it a proposed action, blocked attempt, or actual effect?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!danger] Authorization is part of the profession
 > Test only systems, data, accounts, models, and environments for which you have explicit written authorization and rules of engagement. Stop on unsafe impact, preserve evidence securely, and coordinate disclosure/remediation.

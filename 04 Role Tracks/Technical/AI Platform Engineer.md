@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/ai-platform-engineer
   - skill/platform-engineering
+last_updated: 2026-10-13
 ---
 
 # AI Platform Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Which identity and capacity defaults teams inherit**. Produce **Tenant contract, quotas, negative tests** and answer: Can a valid caller select another user's delegated identity?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Give many AI teams a secure, reliable, observable, cost-aware paved road for data access, experimentation, models, retrieval, agents, deployment, and governance.

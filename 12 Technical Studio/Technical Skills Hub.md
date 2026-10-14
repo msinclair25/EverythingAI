@@ -20,9 +20,13 @@ tags:
   - hub
 cssclasses:
   - everything-ai
+last_updated: 2026-10-13
 ---
 
 # Technical Skills Hub
+
+> [!info] October 13, 2026 update
+> The sixteen-concept spine is unchanged. Apply it through [[Technical Role Practice Workbook — October 2026]], [[Case - Agent Memory Incident]], and [[Case - Routing Quality and Capacity]].
 
 > [!abstract] Outcome
 > Learn the technical concepts that every builder-track role reuses, in plain language first: what the idea is, **why it exists**, what the jargon actually names, and what goes wrong when you skip it. Cases in [[Technical Studio]] then force a decision with those ideas.

@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/ai-engineer
   - skill/ai-applications
+last_updated: 2026-10-13
 ---
 
 # AI Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether a provider migration preserves the product contract**. Produce **Paired evaluation and release memo** and answer: Which regression blocks release despite a better mean?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Deliver dependable AI-powered product behavior by combining models, retrieval, tools, software, evaluations, guardrails, and operational feedback into one coherent system.

@@ -18,9 +18,13 @@ tags:
   - hub
 cssclasses:
   - everything-ai
+last_updated: 2026-10-13
 ---
 
 # AI Career Atlas
+
+> [!info] October 13, 2026 update
+> Use [[US Career and Governance Update — October 2026]] for the current BLS projection window and [[Technical Role Practice Workbook — October 2026]] for all 23 technical role exercises.
 
 The atlas organizes AI work by the outcome a person owns. It includes established occupations, AI specializations of established occupations, and emerging titles. See [[Coverage, Evidence, and Limits]] before interpreting the list as a census.
 
@@ -134,4 +138,4 @@ Open [[AI Career Landscape.canvas|the interactive AI career landscape]] to pan, 
 - Apply [[Industry Overlay Hub]] after choosing a functional role.
 
 > [!source] Market evidence
-> The 2026 Stanford AI Index reports continued expansion of organizational AI adoption and U.S. AI investment, while BLS tracks growth through broader occupations rather than most AI-specific titles. Sources: [Stanford AI Index 2026](https://hai.stanford.edu/ai-index/2026-ai-index-report) and [BLS 2024–2034 occupational projections](https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm), verified 2026-08-12.
+> For current occupation-specific U.S. evidence, use [[US Career and Governance Update — October 2026]]. The earlier August market synthesis remains in [[August 2026 Research Brief]]; do not apply an occupation’s median pay or growth rate to every AI title.

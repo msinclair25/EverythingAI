@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/inference-performance
   - skill/performance-engineering
+last_updated: 2026-10-13
 ---
 
 # Inference and Performance Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Which batching/routing policy meets quality and tail latency**. Produce **Load model, p95/p99, cost per successful task** and answer: Do retries create more load than the rejected traffic?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Increase useful model throughput and reduce latency, memory, energy/cost, and operational risk through measurement-led changes to models, compilers, kernels, runtimes, serving, and hardware placement—without silently sacrificing required quality.

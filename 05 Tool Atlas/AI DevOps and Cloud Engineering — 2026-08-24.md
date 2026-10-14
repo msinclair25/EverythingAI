@@ -27,9 +27,13 @@ tags:
 cssclasses:
   - everything-ai
 source_policy: official-first
+last_updated: 2026-10-13
 ---
 
 # AI DevOps and Cloud Engineering — 2026-08-24
+
+> [!info] October 13, 2026 update
+> This August dossier is the baseline. [[Cloud AI Operations — October 2026]] and [[Model and Agent Lifecycle Management]] add current identity and lifecycle evidence.
 
 > [!abstract] Why this intersection matters
 > AI changes what teams ship, but cloud and DevOps determine whether that work is repeatable, secure, observable, affordable, and recoverable. This track studies both directions: **AI for DevOps** (assistive coding, infrastructure, incidents, and cost work) and **DevOps for AI** (the lifecycle that delivers models, prompts, retrieval, tools, agents, and data).

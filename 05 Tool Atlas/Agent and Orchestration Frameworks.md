@@ -17,9 +17,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Agent and Orchestration Frameworks
+
+> [!info] October 13, 2026 update
+> Check [[Model and Agent Lifecycle Management]] and [[Cloud AI Operations — October 2026]] for hosted-service retirement and feature-maturity boundaries.
 
 Agent frameworks coordinate model calls, tools, memory/state, handoffs, durable execution, and human approvals. A framework is not a substitute for a defined workflow, evaluation set, permissions model, or failure policy.
 

@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/data-scientist
   - skill/statistics
+last_updated: 2026-10-13
 ---
 
 # Data Scientist — AI/ML
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether a routing improvement is real and useful**. Produce **Paired analysis, uncertainty, business-impact memo** and answer: What changed in the denominator or case mix?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Turn data into reliable decisions by defining the question, measuring the right quantities, testing explanations, building appropriate predictive models, and communicating uncertainty and action.
@@ -198,7 +203,7 @@ Search `data scientist`, `machine learning data scientist`, `product data scient
 ## Sources
 
 - [BLS — Data Scientists](https://www.bls.gov/ooh/math/data-scientists.htm) — U.S. duties, skills, and education context; accessed 2026-08-12.
-- [BLS — Math occupations](https://www.bls.gov/ooh/math/home.htm) — 2024–2034 U.S. occupational context; modified 2025-08-28, accessed 2026-08-12.
+- [BLS — Math occupations](https://www.bls.gov/ooh/math/home.htm) — historical U.S. occupational context (use [[US Career and Governance Update — October 2026]] for current projections); modified 2025-08-28, accessed 2026-08-12.
 - [O*NET — Data Scientists, 15-2051.00](https://www.onetonline.org/link/details/15-2051.00) — U.S. task/skill context; accessed 2026-08-12.
 - [NIST AI RMF Core](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) — mapping, measurement, management, and governance; accessed 2026-08-12.
 - [MLflow model evaluation](https://mlflow.org/docs/latest/ml/evaluation) — current classification/regression evaluation and validation workflows; accessed 2026-08-12.

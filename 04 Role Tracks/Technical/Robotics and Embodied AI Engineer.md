@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/robotics-embodied-ai
   - modality/robotics
+last_updated: 2026-10-13
 ---
 
 # Robotics and Embodied AI Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **When uncertain perception must stop action**. Produce **Simulated safety envelope and recovery policy** and answer: How do you prevent language output bypassing a controller?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Create physical agents that perceive, estimate state, plan, learn, and act reliably in the real world while respecting hardware limits and human safety.

@@ -20,9 +20,14 @@ tags:
   - career/technical
   - role/ml-engineer
   - skill/production-ml
+last_updated: 2026-10-13
 ---
 
 # ML Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether a model change generalizes to deployment data**. Produce **Split manifest, baseline, slice report** and answer: What happens under training/serving skew?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Build, deploy, and continuously improve machine-learning systems that produce useful predictions under real constraints for data quality, latency, scale, cost, reliability, security, and change.

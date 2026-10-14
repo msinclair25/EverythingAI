@@ -25,9 +25,13 @@ tags:
 cssclasses:
   - everything-ai
 source_policy: official-first
+last_updated: 2026-10-13
 ---
 
 # Cloudflare and Vercel AI
+
+> [!info] October 13, 2026 update
+> Continue with [[Case - Routing Quality and Capacity]] for current admission-control and Python-classifier examples, quality gates, retry budgets, and free-first practice.
 
 > [!abstract] The capability
 > Cloudflare and Vercel are both moving beyond “host a web app.” Cloudflare is assembling an edge-native AI runtime: serverless inference, gateway controls, durable agent identity/state, managed search, MCP, browser and sandbox tools, and durable Workflows. Vercel is assembling a web-native AI application and agent stack: AI SDK 7, multi-provider AI Gateway, approvals, durable WorkflowAgent runs, isolated Sandbox execution, secure Connect credentials, and Fluid Compute.

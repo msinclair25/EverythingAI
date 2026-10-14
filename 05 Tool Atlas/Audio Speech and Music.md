@@ -20,9 +20,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Audio Speech and Music
+
+> [!info] October 13, 2026 update
+> Check [[Model and Agent Lifecycle Management]] and its linked provider lifecycle tables before selecting audio endpoints; an older example may be retired or preview-only.
 
 This category covers recording/editing, transcription (STT), synthesis (TTS), voice agents, dubbing, separation, and music generation. Test with the accents, noise, vocabulary, latency, and accessibility needs of the actual audience.
 

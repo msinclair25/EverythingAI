@@ -17,9 +17,13 @@ review_by: 2026-11-24
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Security and Red Teaming
+
+> [!info] October 13, 2026 update
+> Read the corrected edition mapping in [[OWASP and AI Security — 2026]], then work [[Case - Agent Memory Incident]].
 
 AI security testing covers model behavior *and* the surrounding application: prompts, retrieval, tools, identity, secrets, data stores, supply chain, plugins, sandboxes, logs, and human approvals.
 

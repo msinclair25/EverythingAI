@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/synthetic-data-engineer
   - skill/data-generation
+last_updated: 2026-10-13
 ---
 
 # Synthetic Data Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether synthetic examples improve held-out real-task performance**. Produce **Provenance, deduplication, utility/privacy assessment** and answer: Did the generator leak evaluation examples into training?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Generate, filter, document, and validate artificial data that fills a defined coverage, scale, privacy, simulation, training, or evaluation need without creating misleading quality, hidden leakage, or unjustified privacy claims.

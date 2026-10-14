@@ -20,9 +20,14 @@ tags:
   - career/technical
   - role/llm-engineer
   - skill/foundation-models
+last_updated: 2026-10-13
 ---
 
 # LLM Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Prompt/retrieval/adaptation tradeoff under a budget**. Produce **Ablation table and exact configuration** and answer: What evidence rules out a simpler intervention?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Adapt, evaluate, serve, and integrate language models so a defined set of language tasks works reliably, safely, and efficiently under production conditions.

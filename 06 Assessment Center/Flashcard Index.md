@@ -12,9 +12,13 @@ last_verified: 2026-08-24
 review_by: 2026-11-24
 tags: [ai-careers, flashcards, index]
 cssclasses: [everything-ai]
+last_updated: 2026-10-13
 ---
 
 # Flashcard Index
+
+> [!info] October 13, 2026 update
+> New cards: [[October 2026 Research Refresh]], [[Model and Agent Lifecycle Management]], [[Cloud AI Operations — October 2026]], [[MCP Contract Testing and Upgrade Readiness]], [[Case - Agent Memory Incident]], [[Case - Routing Quality and Capacity]], [[Technical Role Practice Workbook — October 2026]], and [[US Career and Governance Update — October 2026]].
 
 Every foundation, bridge, and role note uses `Question:: Answer`. Hide text after `::`, answer aloud, then compare the idea.
 

@@ -20,9 +20,13 @@ tags:
 cssclasses:
   - everything-ai
 source_policy: official-first
+last_updated: 2026-10-13
 ---
 
 # Case - OWASP Agentic Security Review
+
+> [!info] Taxonomy correction · October 13, 2026
+> LLM risk IDs in this case now follow the canonical 2025 edition. Agentic IDs remain separate. See [[OWASP and AI Security — 2026]] and [[October 2026 Research Refresh]].
 
 > [!abstract] The decision
 > Northstar Support wants to launch an agent that reads customer tickets and policy documents, searches a CRM, drafts refunds, opens cases, and asks a human to approve selected actions. Your job is to decide whether the design is safe to pilot, what must be blocked, which OWASP risks apply, and what evidence is required before production.
@@ -72,14 +76,14 @@ Before opening the worked path, answer:
 |---|---|---|---|
 | Ticket contains hidden instruction to email a secret URL | LLM01 / ASI01 | Indirect injection can redirect the goal and exfiltrate context | Block external communication; add adversarial corpus |
 | One identity serves every tenant | LLM02 / ASI03 | Confused deputy and cross-tenant disclosure | Stop; tenant-bound identity required |
-| Agent can call refund with arbitrary amount | LLM03 / ASI02 | Valid tool used outside business policy | Stop writes; deterministic amount/eligibility gate |
-| CRM MCP server discovers tools dynamically | LLM04 / ASI04 / ASI07 | Supply-chain and inter-agent trust risk | Pin, sign, review, and allowlist tools |
-| Preference memory accepts model-written instructions | LLM05 / ASI06 | Persistent poisoning can affect future customers | Quarantine memory; facts only, TTL, approval |
-| Generated email/body reaches a renderer directly | LLM10 / ASI02 | Model output can create links or content injection | Typed schema, encoding, destination policy |
-| Complete prompts and tool results in logs | LLM02 / LLM08 | Debugging path becomes a disclosure surface | Redact, minimize, role-protect, short retention |
-| No budget, step, retry, or timeout cap | LLM06 / ASI08 | Runaway loops create denial-of-wallet and cascades | Add budgets, circuit breakers, max depth |
-| Cooperative completion score only | LLM07 / LLM09 | Quality and retrieval security are unmeasured | Build held-out, ACL, no-answer, and adversarial sets |
-| No component inventory or rollback | LLM04 / ASI04 | Cannot identify affected deploys after compromise | Generate AIBOM and signed release manifest |
+| Agent can call refund with arbitrary amount | LLM06 / ASI02 | Valid tool used outside business policy | Stop writes; deterministic amount/eligibility gate |
+| CRM MCP server discovers tools dynamically | LLM03 / ASI04 / ASI07 | Supply-chain and inter-agent trust risk | Pin, sign, review, and allowlist tools |
+| Preference memory accepts model-written instructions | LLM04 / ASI06 | Persistent poisoning can affect future customers | Quarantine memory; facts only, TTL, approval |
+| Generated email/body reaches a renderer directly | LLM05 / ASI02 | Model output can create links or content injection | Typed schema, encoding, destination policy |
+| Complete prompts and tool results in logs | LLM02 / LLM07 | Debugging path becomes a disclosure surface | Redact, minimize, role-protect, short retention |
+| No budget, step, retry, or timeout cap | LLM10 / ASI08 | Runaway loops create denial-of-wallet and cascades | Add budgets, circuit breakers, max depth |
+| Cooperative completion score only | LLM09 / LLM08 | Quality and retrieval security are unmeasured | Build held-out, ACL, no-answer, and adversarial sets |
+| No component inventory or rollback | LLM03 / ASI04 | Cannot identify affected deploys after compromise | Generate AIBOM and signed release manifest |
 
 ## Worked decision
 
@@ -153,7 +157,7 @@ For each inject, record the attack path, expected control, observed trace, user/
 ### Answer key
 
 1. Read-only, single-tenant, synthetic-data pilot; no refunds, email, persistent memory, dynamic tools, or production writes.
-2. Examples: LLM01 injection, LLM02 disclosure, LLM03 agency, LLM04 supply chain, LLM06 consumption, LLM10 output; ASI01 goal hijack, ASI02 tool misuse, ASI03 identity, ASI04 supply chain, ASI06 memory, ASI08 cascade.
+2. Examples: LLM01 injection, LLM02 disclosure, LLM06 agency, LLM03 supply chain, LLM10 consumption, LLM05 output; ASI01 goal hijack, ASI02 tool misuse, ASI03 identity, ASI04 supply chain, ASI06 memory, ASI08 cascade.
 3. It cannot prove tenant/user scope and creates a confused-deputy path to other customers' data or actions.
 4. Tenant-bound, short-lived, read-only search with ACL enforcement at the tool boundary.
 5. A poisoned memory can change future sessions, users, retrieval, plans, and tools.

@@ -13,7 +13,7 @@ require "uri"
 require "yaml"
 
 ROOT = Pathname.new(__dir__).parent.expand_path
-AS_OF = Date.parse(ENV.fetch("NOTION_AS_OF", "2026-08-25"))
+AS_OF = Date.parse(ENV.fetch("NOTION_AS_OF", Date.today.iso8601))
 FENCE = 96.chr * 3
 
 PARTS = {
@@ -466,7 +466,7 @@ def readme(pack_name, part_number, part_count, include_role, include_source)
     "",
     "**Pack:** #{pack_name}"
   ]
-  lines << "**Import set:** Part #{part_number} of #{part_count}. Import all parts to restore the full cross-link graph." if part_number
+  lines << "**Import set:** Part #{part_number} of #{part_count}. Import all parts for full content coverage. Cross-part links may need manual repair after separate imports; use the full pack when practical." if part_number
   lines += [
     "",
     "## Start here",

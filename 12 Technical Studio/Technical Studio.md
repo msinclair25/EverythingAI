@@ -18,9 +18,13 @@ tags:
   - hub
 cssclasses:
   - everything-ai
+last_updated: 2026-10-13
 ---
 
 # Technical Studio
+
+> [!info] October 13, 2026 update
+> New cases: [[Case - Agent Memory Incident]] and [[Case - Routing Quality and Capacity]]. Choose your evidence artifact in [[Technical Role Practice Workbook — October 2026]].
 
 > [!abstract] Outcome
 > Learn the technical ideas, then rehearse the decisions. [[Technical Skills Hub]] teaches core concepts, why they exist, and the jargon. Each case then gives a bounded problem, a contract, constructed teaching numbers, and a ship/stop choice. This layer sits between [[Foundations Hub]] and a role in [[Technical AI Careers]].
@@ -84,6 +88,8 @@ Start here if a term is fuzzy. Full order and “why this note” lives in [[Tec
 | [[Case - Azure DevOps Foundry Release Gate]] | Can this agent change safely reach production? | [[AI Platform Engineer]], [[MLOps Engineer]], [[Agentic AI Engineer]], [[AI Evaluation Engineer]] |
 | [[Case - Edge AI Platform Choice]] | Which platform boundary makes this agent safer and more operable? | [[AI Platform Engineer]], [[Agentic AI Engineer]], [[MLOps Engineer]], [[AI Security Engineer]] |
 | [[Case - OWASP Agentic Security Review]] | Can this tool-using, memory-bearing agent be piloted without crossing unsafe trust boundaries? | [[AI Security Engineer]], [[Agentic AI Engineer]], [[AI Evaluation Engineer]], [[AI Platform Engineer]] |
+| [[Case - Agent Memory Incident]] | What state must be repaired before recovery? | [[Agentic AI Engineer]], [[AI Security Engineer]], [[ML Data Engineer]] |
+| [[Case - Routing Quality and Capacity]] | Which route meets quality, risk, cost, and capacity constraints? | [[Inference and Performance Engineer]], [[AI Evaluation Engineer]], [[AI Platform Engineer]] |
 
 ## Interview transfer
 

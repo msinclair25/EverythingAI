@@ -17,9 +17,13 @@ review_by: 2026-11-12
 cssclasses:
   - everything-ai
 source_policy: official-only
+last_updated: 2026-10-13
 ---
 
 # Evaluation and Observability
+
+> [!info] October 13, 2026 update
+> See [[Model and Agent Lifecycle Management]] for hosted evaluation lifecycle and export planning. Hosted OpenAI Evals and the open-source evals repository are distinct.
 
 Evaluation asks whether an AI system is good enough; observability explains what happened in development and production. Effective programs combine deterministic checks, task metrics, human rubrics, adversarial cases, trace review, and business outcomes.
 

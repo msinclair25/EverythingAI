@@ -23,9 +23,14 @@ tags:
   - career/technical
   - role/ai-hardware-accelerator
   - skill/computer-architecture
+last_updated: 2026-10-13
 ---
 
 # AI Hardware and Accelerator Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Which resource limits dominate the workload**. Produce **Memory/bandwidth/compute budget and measured bottleneck** and answer: Is the optimization useful end to end or only in a kernel?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Design and validate hardware, architecture, numerics, interconnect, memory, or hardware–software co-design that makes AI training and inference more capable, efficient, reliable, and manufacturable.

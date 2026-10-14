@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/speech-ai-engineer
   - modality/audio
+last_updated: 2026-10-13
 ---
 
 # Speech AI Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether streaming speech quality supports the workflow**. Produce **Accent/noise/latency slices and interruption tests** and answer: Does low word error rate hide a critical entity error?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Build speech and audio systems—such as recognition, synthesis, speaker, translation, enhancement, or conversational pipelines—that work across speakers, acoustics, languages, devices, and real-time constraints.

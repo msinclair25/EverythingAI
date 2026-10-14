@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/nlp-engineer
   - modality/language
+last_updated: 2026-10-13
 ---
 
 # NLP Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether routing or extraction works across language slices**. Produce **Label guide, confusion matrix, abstention curve** and answer: Does valid structure conceal wrong meaning?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Build language systems that transform, classify, extract, retrieve, translate, or generate text accurately across real linguistic variation and operational constraints.

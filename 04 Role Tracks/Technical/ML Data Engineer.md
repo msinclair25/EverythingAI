@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/ml-data-engineer
   - skill/data-engineering
+last_updated: 2026-10-13
 ---
 
 # ML Data Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether records and features are traceable and deletable**. Produce **Lineage map, schema checks, deletion test** and answer: Can one poisoned source contaminate several derived stores?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Deliver trustworthy, reproducible, governed, model-ready data—at the right historical point, freshness, quality, and scale—for training, evaluation, retrieval, and inference.

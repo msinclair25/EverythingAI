@@ -24,9 +24,13 @@ tags:
 cssclasses:
   - everything-ai
 source_policy: official-first
+last_updated: 2026-10-13
 ---
 
 # MCP Deep Dive — 2026-08-24
+
+> [!info] October 13, 2026 update
+> The existing protocol baseline remains the study starting point. Add [[MCP Contract Testing and Upgrade Readiness]] for compatibility, authorization, retries, and state-migration evidence.
 
 > [!abstract] The point of this note
 > Model Context Protocol (MCP) is an open protocol for connecting AI hosts and clients to tools, resources, prompts, and other agent capabilities. It is not an authorization system, a sandbox, an agent framework, or a guarantee that a server is safe. This note teaches the protocol as a production engineering surface: wire behavior, capability negotiation, transports, identity, OAuth, tool contracts, security, testing, operations, economics, and career evidence.

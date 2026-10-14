@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/rag-knowledge-engineer
   - skill/information-retrieval
+last_updated: 2026-10-13
 ---
 
 # RAG and Knowledge Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether retrieved evidence is relevant and authorized**. Produce **Retrieval/generation error decomposition** and answer: Can a revoked document still appear in cache?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Deliver relevant, authorized, current, traceable knowledge to AI systems and users by engineering corpora, retrieval, ranking, context, citations, and feedback as measurable subsystems.

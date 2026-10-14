@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/mlops-engineer
   - skill/mlops
+last_updated: 2026-10-13
 ---
 
 # MLOps Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether model/prompt/data changes can be safely released**. Produce **Versioned gate, canary, recovery record** and answer: What if the old endpoint is already retired?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Make model development, release, observation, recovery, and governance repeatable and safe across teams, from reproducible training through production retirement.

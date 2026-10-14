@@ -25,9 +25,13 @@ tags:
 cssclasses:
   - everything-ai
 source_policy: official-first
+last_updated: 2026-10-13
 ---
 
 # Microsoft Azure DevOps and Foundry
+
+> [!info] October 13, 2026 update
+> Use [[Cloud AI Operations — October 2026]] for the current Foundry maturity matrix and Azure DevOps WIF migration scope. Retain this note for the full architecture and exercises.
 
 > [!abstract] The capability
 > Azure DevOps supplies the work, code, review, pipeline, package, test, and environment-control system. Microsoft Foundry supplies the model, agent, tool, evaluation, trace, and hosted-agent control plane. Together they form a path from **a work item and risk claim → reviewed change → repeatable evaluation → approved deployment → observable operation → a new work item**.

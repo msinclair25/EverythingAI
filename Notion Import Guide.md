@@ -11,6 +11,7 @@ level:
   - advanced
 status: current
 as_of: 2026-08-25
+last_updated: 2026-10-13
 last_verified: 2026-08-25
 review_by: 2026-11-25
 tags:
@@ -37,7 +38,7 @@ source_policy: official-first
 | [Notion Import Pack - Part 3 Tools, Research, and Studio.zip](<Notion Import Pack - Part 3 Tools, Research, and Studio.zip>) | Tool atlas, templates, research, visuals, and technical studio |
 | [scripts/export_notion.rb](<scripts/export_notion.rb>) | Rebuilds the full and split packs after vault changes |
 
-The split packs keep each import below the current Notion bulk-import rate guidance. Import all three parts if the full pack is rate-limited or partially imported.
+The split packs reduce the number of pages in each import; they do not guarantee acceptance under every account's import limits. Import all three for full content coverage. Links between separately imported parts may need manual repair, so prefer the full pack when practical.
 
 ## Import workflow
 
@@ -68,6 +69,8 @@ ruby scripts/export_notion.rb
 ~~~
 
 The script creates the ZIP files in the vault root. It uses only Ruby's standard library plus the system zip command; no cloud service or Notion credential is required.
+
+The generation date defaults to the current date. For a reproducible dated build, run `NOTION_AS_OF=2026-10-13 ruby scripts/export_notion.rb`. This is the export date, not a claim that every source was verified that day. October content is indexed in [[October 2026 Research Refresh]].
 
 ## Sync model
 

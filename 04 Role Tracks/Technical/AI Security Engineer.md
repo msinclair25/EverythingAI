@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/ai-security-engineer
   - skill/ai-security
+last_updated: 2026-10-13
 ---
 
 # AI Security Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether identity, tool, memory, and egress controls hold**. Produce **Threat-to-control-to-test matrix** and answer: Which enforcement point exists outside the model?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Prevent, detect, contain, and recover from attacks and failures across AI data, models, training, retrieval, agents, applications, infrastructure, and supply chains while enabling legitimate use.

@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/computer-vision-engineer
   - modality/vision
+last_updated: 2026-10-13
 ---
 
 # Computer Vision Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether field performance matches test performance**. Produce **Lighting/device/site slices and threshold rationale** and answer: Which false negative is operationally unacceptable?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Build systems that derive useful, tested representations or decisions from images and video across variation in sensors, environments, people, motion, and deployment hardware.

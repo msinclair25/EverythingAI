@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/ai-safety-alignment
   - skill/alignment-research
+last_updated: 2026-10-13
 ---
 
 # AI Safety and Alignment Researcher
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether a safety intervention generalizes beyond known tests**. Produce **Threat model, held-out attacks, utility tradeoff** and answer: Did the evaluator reward refusal while missing harmful actions?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Develop and test methods that help increasingly capable AI systems follow intended goals and constraints, remain honest and robust, expose limitations, support effective oversight, and avoid unacceptable harm.

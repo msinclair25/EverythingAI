@@ -10,10 +10,11 @@ level:
   - beginner
   - intermediate
   - advanced
-status: release-2
-as_of: 2026-08-24
-last_verified: 2026-08-24
-review_by: 2026-11-24
+status: release-3
+as_of: 2026-10-13
+last_verified: 2026-10-13
+review_by: 2026-10-27
+verification_scope: navigation and inventory; source checks scoped in October research refresh
 tags:
   - ai-careers
   - hub
@@ -26,29 +27,48 @@ cssclasses:
 # Everything AI
 
 > [!abstract] Learn the field. Choose a role. Build evidence. Prepare for the interview.
-> A U.S.-focused, beginner-to-advanced learning vault for the major job functions in the AI economy. Current research cutoff: **August 24, 2026**.
+> A U.S.-focused, beginner-to-advanced learning vault for the major job functions in the AI economy. Latest research refresh: **October 13, 2026**. Individual notes retain their own verification scope and dates.
 
 > [!warning] A living field
 > AI titles are not standardized. Employers frequently rename or combine jobs. This vault maps work by **function**, then supplies title aliases so you can recognize the same work in job postings. See [[Coverage, Evidence, and Limits]].
 
-## Vault inventory · 2026-08-24
+## Vault inventory · 2026-10-13
 
 | Material | Included |
 |---|---:|
-| Obsidian Markdown notes | 226 |
+| Obsidian Markdown notes | 235 |
 | Full role tracks | 63 |
 | Foundations + bridge-skill modules | 33 |
 | Technical concept notes | 16 (frozen) |
-| Technical studio cases + drills | 10 + 10 |
+| Technical studio cases + drills | 12 + 10 |
 | Tool categories | 22 |
 | U.S. industry overlays | 10 (3 teaching-length) |
-| Flashcards | 1010 |
-| Notes with quizzes or knowledge checks | 134 |
-| Mermaid diagrams + interactive Canvas | 144 + 1 |
+| Flashcards | 1052 |
+| Notes with quizzes or knowledge checks | 145 |
+| Mermaid diagrams + interactive Canvas | 148 + 1 |
 
 Counts describe the current vault inventory, not an official census of AI occupations. Role coverage follows the functional method in [[Coverage, Evidence, and Limits]]. Studio cases are teaching scenarios, not measured deployments.
 
-## Current update · 2026-08-24
+Reproduce structural counts with `ruby scripts/validate_vault.rb`. Cards count non-code question/answer lines; checks count explicit quiz/knowledge-check headings. Counts are inventory, not a claim of unique or independently validated assessment items.
+
+## Current update · 2026-10-13
+
+Start with [[October 2026 Research Refresh]] for the source ledger, corrections, and honest review limits.
+
+| Study layer | What you will learn |
+|---|---|
+| [[Model and Agent Lifecycle Management]] | Provider and hosted-service retirements, paired evaluation, migration and safe fallback |
+| [[Cloud AI Operations — October 2026]] | Foundry maturity, Azure DevOps federation, AWS identity, and cloud role ownership |
+| [[MCP Contract Testing and Upgrade Readiness]] | Compatibility, authorization, retry ambiguity, and application state |
+| [[Case - Agent Memory Incident]] | Containment, provenance, durable-state repair, and recovery evidence |
+| [[Case - Routing Quality and Capacity]] | Classifiers, admission control, high-risk recall, and cost per successful task |
+| [[Technical Role Practice Workbook — October 2026]] | A distinct decision, artifact, and reviewer challenge for all 23 technical roles |
+| [[US Career and Governance Update — October 2026]] | Updated BLS context and practical exercises for nontechnical/hybrid roles |
+| [[AI Change Impact Review Template]] | A reusable record of source status, tests, release decisions, and uncertainty |
+
+All 63 role profiles link to the new learning layer. The OWASP dossier's LLM edition, IDs, and flashcards have been corrected to the canonical 2025 taxonomy; Agentic 2026 remains separate. Older prices, legal tables, and job-market claims are not silently restamped.
+
+## Previous update · 2026-08-24
 
 | Added | What it gives you |
 |---|---|

@@ -22,9 +22,14 @@ tags:
   - career/technical
   - role/ai-evaluation-engineer
   - skill/evaluation
+last_updated: 2026-10-13
 ---
 
 # AI Evaluation Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether a score can justify a release decision**. Produce **Dataset, grader version, disagreement and slice report** and answer: What breaks when the hosted evaluation service disappears?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Create trustworthy, reproducible evidence about what an AI system can do, where it fails, how risks manifest, and whether a change is good enough to release.

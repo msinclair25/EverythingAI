@@ -21,9 +21,14 @@ tags:
   - career/technical
   - role/research-engineer
   - skill/ml-systems
+last_updated: 2026-10-13
 ---
 
 # Research Engineer
+
+> [!info] October 13, 2026 update
+> Practice focus: **Whether an experiment can be reliably reproduced**. Produce **Environment, data/version manifest, restart test** and answer: Can another person reproduce the result without your machine?
+> Use [[Technical Role Practice Workbook — October 2026]] and [[October 2026 Research Refresh]]. This checkpoint does not reverify every older market/tool claim in this profile.
 
 > [!abstract] Mission
 > Turn uncertain research ideas into trustworthy experimental systems quickly: implement methods, create training and evaluation infrastructure, debug at scale, and generate evidence researchers can rely on.
