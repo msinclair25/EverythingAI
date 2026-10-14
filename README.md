@@ -12,7 +12,7 @@ The material is organized around a simple loop:
 
 | Inside the vault | Count |
 |---|---:|
-| Study and reference notes | 235 |
+| Study and reference notes | 236 |
 | Role tracks | 63: 23 technical + 40 nontechnical/hybrid |
 | Core technical concept notes | 16 |
 | Worked technical cases | 12 |
@@ -89,6 +89,12 @@ Obsidian Markdown is the canonical source; the Notion layer is a one-way derivat
 
 Separate ZIP imports may require cross-part link repair. Mermaid source is preserved as code; do not assume it renders automatically in Notion. Reimporting is not automatic synchronization.
 
+## Capacities import
+
+The [Capacities Import Guide](Capacities%20Import%20Guide.md) explains four ordered ZIP packs for the Capacities desktop bulk importer. They map study notes to Role, Concept, Tool, Case, Research, and Page objects, include three infographic images, and provide static replacements for Obsidian Bases and Canvas. Every pack stays within Capacities' current 100-file import limit. Run `ruby scripts/export_capacities.rb` to regenerate them after vault edits.
+
+This is a manual snapshot import. Cross-pack links should be checked after importing all four packs; importing again may create duplicate objects.
+
 ## Repository visuals
 
 The matching [GitHub social preview image](assets/everything-ai-github-social-preview.jpg) is included for repository sharing. Upload it from **Settings → General → Social preview** on GitHub when you want it to appear on shared repository links.
@@ -108,6 +114,7 @@ After editing:
 ```bash
 ruby scripts/validate_vault.rb
 ruby scripts/export_notion.rb
+ruby scripts/export_capacities.rb
 git diff --check
 ```
 

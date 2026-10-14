@@ -4,7 +4,7 @@ type: changelog
 scope: United States
 status: active
 as_of: 2026-08-25
-last_updated: 2026-10-13
+last_updated: 2026-10-14
 last_verified: 2026-08-25
 review_by: 2026-11-25
 tags: [ai-careers, changelog]
@@ -12,6 +12,13 @@ cssclasses: [everything-ai]
 ---
 
 # Vault Changelog
+
+## 2026-10-14 — Capacities import packs
+
+- Added [[Capacities Import Guide]] and `scripts/export_capacities.rb` for four dated ZIP packs that stay within Capacities' 100-file bulk-import limit.
+- Converted source metadata to consistent Role, Concept, Tool, Case, Research, or Page types and normalized note links to canonical titles.
+- Included all 236 vault Markdown notes, three readable Base/Canvas replacements, and three infographic images across the four packs. Obsidian remains the source of edits.
+- Updated the README and Home, and regenerated the Notion packs so both derivative formats include the new guide.
 
 ## 2026-10-13 — Research refresh and applied technical depth
 

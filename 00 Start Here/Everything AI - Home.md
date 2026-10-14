@@ -13,6 +13,7 @@ level:
 status: release-3
 as_of: 2026-10-13
 last_verified: 2026-10-13
+last_updated: 2026-10-14
 review_by: 2026-10-27
 verification_scope: navigation and inventory; source checks scoped in October research refresh
 tags:
@@ -36,7 +37,7 @@ cssclasses:
 
 | Material | Included |
 |---|---:|
-| Obsidian Markdown notes | 235 |
+| Obsidian Markdown notes | 236 |
 | Full role tracks | 63 |
 | Foundations + bridge-skill modules | 33 |
 | Technical concept notes | 16 (frozen) |
@@ -65,6 +66,7 @@ Start with [[October 2026 Research Refresh]] for the source ledger, corrections,
 | [[Technical Role Practice Workbook — October 2026]] | A distinct decision, artifact, and reviewer challenge for all 23 technical roles |
 | [[US Career and Governance Update — October 2026]] | Updated BLS context and practical exercises for nontechnical/hybrid roles |
 | [[AI Change Impact Review Template]] | A reusable record of source status, tests, release decisions, and uncertainty |
+| [[Capacities Import Guide]] | Four ordered desktop import packs with object types, visuals, and static Base/Canvas replacements |
 
 All 63 role profiles link to the new learning layer. The OWASP dossier's LLM edition, IDs, and flashcards have been corrected to the canonical 2025 taxonomy; Agentic 2026 remains separate. Older prices, legal tables, and job-market claims are not silently restamped.
 
